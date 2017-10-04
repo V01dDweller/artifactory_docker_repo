@@ -1,4 +1,4 @@
-# How to Create a Private Docker Registry in Artifactory Pro#
+# How to Create a Private Docker Registry in Artifactory Pro #
 
 Below are the stages required to create a private Docker registry using Artifactory Pro 5.x with an nginx-based reverse-proxy. The final stage is the configuration needed for a docker client to use the new registry. This requires Artifactory Pro (5 or greater) as Artifactory OSS does not allow creating Docker repos.
 
