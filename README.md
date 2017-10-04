@@ -30,11 +30,11 @@ Create a simple Docker V2 repo in Artifactory Pro, accepting the defaults. Perfo
 
    **Note:** This will become the repository name at the end of the Artifactory repo URL, e.g.
    
-        http://artifactoryhost.mydomain.com/artifactory/<b>docker-repo-name</b>
+        http://artifactoryhost.mydomain.com/artifactory/docker-repo-name
 
         *... and the corresponding docker registry sub-domain*
 
-        https://**docker-repo-name**.artifactoryhost.mydomain.com/image:tag
+        https://docker-repo-name.artifactoryhost.mydomain.com/image:tag
 
 6. Accept all defaults and click the **Save & Finish** button
 
