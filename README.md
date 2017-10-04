@@ -12,7 +12,7 @@ Below are the stages required to create a private Docker registry using Artifact
 
 ---
 
-###Stage 1: Create a Docker Repo in Artifactory###
+### Stage 1: Create a Docker Repo in Artifactory ###
 
 Create a simple Docker V2 repo in Artifactory Pro, accepting the defaults. Perform these steps in the Artifactory Pro web gui using an Admin account. 
 
@@ -40,7 +40,7 @@ Create a simple Docker V2 repo in Artifactory Pro, accepting the defaults. Perfo
 
 ---
 
-###Stage 2. Create OpenSSL Wildcard Certificate###
+### Stage 2. Create OpenSSL Wildcard Certificate ###
 
 While a CA-issued SSL cert would be ideal, this step is for creating a self-signed one. These steps should be executed on the Artifactory Pro host via the Linux command line.
 
@@ -63,7 +63,7 @@ While a CA-issued SSL cert would be ideal, this step is for creating a self-sign
 
 ---
 
-###Stage 3. Create a Nginx Reverse-proxy Config File###
+### Stage 3. Create a Nginx Reverse-proxy Config File ###
 
 Generate a reverse-proxy config for nginx using the Artifactory Pro Proxy Configuration Generator and the SSL files created in Stage 2.
 
@@ -117,7 +117,7 @@ Generate a reverse-proxy config for nginx using the Artifactory Pro Proxy Config
 
 ---
 
-###Stage 4. Install Nginx###
+### Stage 4. Install Nginx ###
 
 **Note:** This is for RHEL7, repos for other Linux distributions can be found in the [nginx wiki](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 
@@ -142,7 +142,7 @@ Generate a reverse-proxy config for nginx using the Artifactory Pro Proxy Config
 
 ---
 
-###Stage 5. Configure Nginx as a Reverse-Proxy ###
+### Stage 5. Configure Nginx as a Reverse-Proxy ###
 
 1. Back up/delete the nginx default config:
 
@@ -221,7 +221,7 @@ Generate a reverse-proxy config for nginx using the Artifactory Pro Proxy Config
 
 ---
 
-###Stage 6. Configure a Docker Client to Access the Private Registry###
+### Stage 6. Configure a Docker Client to Access the Private Registry ###
 
 1. Securely transfer the `nginx-selfsigned.crt` file to the Docker client host
 
@@ -265,7 +265,7 @@ Generate a reverse-proxy config for nginx using the Artifactory Pro Proxy Config
 
 ---
 
-###Testing the new Docker Registry###
+### Testing the new Docker Registry ###
 Test the new docker repo via a pull or push from the  docker client:
 
 e.g.
