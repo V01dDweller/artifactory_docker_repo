@@ -268,8 +268,6 @@ Generate a reverse-proxy config for nginx using the Artifactory Pro Proxy Config
 ### Testing the new Docker Registry ###
 Test the new docker repo via a pull or push from the  docker client:
 
-e.g.
-
 ```bash
 docker push docker-repo-name.artifactoryhost.mydomain.com/myimage:tag
 ```
