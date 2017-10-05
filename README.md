@@ -251,15 +251,15 @@ Generate a reverse-proxy config for nginx using the Artifactory Pro Proxy Config
    ```
 6.  Reload systemd daemon configs:
 
-   ```
-   systemctl deamon-reload
-   ```
+    ```
+    systemctl deamon-reload
+    ```
 
  7. Restart docker:
 
-   ```
-   systemctl restart docker
-   ```
+    ```
+    systemctl restart docker
+    ```
 
 ---
 
