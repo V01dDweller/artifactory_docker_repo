@@ -14,7 +14,7 @@ Below are the stages required to create a private Docker registry using Artifact
 
 ### Stage 1: Create a Docker Repo in Artifactory ###
 
-Create a simple Docker V2 repo in Artifactory Pro, accepting the defaults. Perform these steps in the Artifactory Pro web gui using an Admin account. 
+Create a simple Docker V2 repo in Artifactory Pro, accepting the defaults. Perform these steps in the Artifactory Pro web gui.
 
 1. Log into the Artifactory Pro web-gui using the Admin account
 
