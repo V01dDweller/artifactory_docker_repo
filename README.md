@@ -46,21 +46,20 @@ While a CA-issued SSL cert would be ideal, this step is for creating a self-sign
 
 1. Create the OpenSSL self-signed certificate and key files:
 
-  ```bash
-  sudo openssl req\
-  -x509\
-  -nodes -days 3650\
-  -newkey rsa:2048\
-  -keyout /etc/ssl/private/nginx-selfsigned.key\
-  -out /etc/ssl/certs/nginx-selfsigned.crt
-  ```
+    ```bash
+    sudo openssl req\
+    -x509\
+    -nodes -days 3650\
+    -newkey rsa:2048\
+    -keyout /etc/ssl/private/nginx-selfsigned.key\
+    -out /etc/ssl/certs/nginx-selfsigned.crt
+    ```
 
 2. Create a Diffie-Hellman group
 
-  ```bash
-  sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
-  ```
-
+    ```bash
+    sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+    ```
 ---
 
 ### Stage 3. Create a Nginx Reverse-proxy Config File ###
@@ -71,9 +70,9 @@ Generate a reverse-proxy config for nginx using the Artifactory Pro Proxy Config
 
 2. Navigate to:
 
-   ```bash
-   Admin -> Configuration -> Reverse Proxy
-   ```
+    ```bash
+    Admin -> Configuration -> Reverse Proxy
+    ```
 3. Fill out the "Reverse Proxy Configuration" form:
 
    Server Provider: `nginx` (drop-down)
@@ -94,16 +93,15 @@ Generate a reverse-proxy config for nginx using the Artifactory Pro Proxy Config
 
    SSL Key Path \*
 
-   ```bash
-   /etc/ssl/private/nginx-selfsigned.key
-
-   ```
+    ```bash
+    /etc/ssl/private/nginx-selfsigned.key
+    ```
 
    SSL Certificate Path \*
 
-   ```bash
-   /etc/ssl/certs/nginx-selfsigned.crt
-   ```
+    ```bash
+    /etc/ssl/certs/nginx-selfsigned.crt
+    ```
 
    *Docker Reverse Proxy Settings*
 
