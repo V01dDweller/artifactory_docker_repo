@@ -20,9 +20,9 @@ Create a simple Docker V2 repo in Artifactory Pro, accepting the defaults. Perfo
 
 2. Navigate to local repos
 
-  ```bash
-  Admin -> Repositories -> Local
-  ```
+    ```bash
+    Admin -> Repositories -> Local
+    ```
 
 3. Click "(+) New" to create a new local repo
 4. From the available "Package Types" choose "docker"
