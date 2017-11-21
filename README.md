@@ -272,5 +272,5 @@ docker push docker-repo-name.artifactoryhost.mydomain.com/myimage:tag
 
 ### References ###
 
-[Getting Started with Artifactory as a Docker Registry](https://www.jfrog.com/confluence/display/RTF/Getting+Started+with+Artifactory+as+a+Docker+Registry#GettingStartedwithArtifactoryasaDockerRegistry-GettingStartedwithArtifactoryProOn-Prem)
-[Install Nginx as Reverse Proxy on CentOS 7](https://deviantengineer.com/2015/05/nginx-reverseproxy-centos7/)
+* [Getting Started with Artifactory as a Docker Registry](https://www.jfrog.com/confluence/display/RTF/Getting+Started+with+Artifactory+as+a+Docker+Registry#GettingStartedwithArtifactoryasaDockerRegistry-GettingStartedwithArtifactoryProOn-Prem)
+* [Install Nginx as Reverse Proxy on CentOS 7](https://deviantengineer.com/2015/05/nginx-reverseproxy-centos7/)
