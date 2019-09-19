@@ -46,7 +46,7 @@ While a CA-issued SSL cert would be ideal, this step is for creating a self-sign
 
 1. Create the OpenSSL self-signed certificate and key files:
 
-    ```bash
+    ```cmd
     sudo openssl req\
     -x509\
     -nodes -days 3650\
